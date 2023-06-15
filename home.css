@@ -1,0 +1,530 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(sawiro/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 2%;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+    list-style-type: none;
+    position: relative;
+}
+nav ul li a{
+    font-weight: bolder;
+    
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav ul li::after{
+    content: " ";
+    width: 0;
+    height: 4px;
+   
+    display: block;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+    background-image: linear-gradient(to right,cyan , orange);
+
+}
+
+.row{
+    display:  flex;
+    height: 88%;
+    align-items: center;
+    
+    
+}
+.col{
+    flex-basis: 50%;
+}
+.col h1{
+    
+    color: #fff;
+    font-size: 80px;
+
+
+  
+}
+.col p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding:12px 0;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+
+}
+.card{
+    width: 250px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+   
+    background-position: center;
+    background-size: cover;
+    transition:transform 0.5s;
+
+}
+.card1{
+    background-image: url(sawiro/pic-1.png);
+
+}
+.card2{
+    background-image: url(sawiro/train.jpg);
+
+}
+.card3{
+    background-image: url(sawiro/ship.jfif);
+
+}
+.card4{
+    background-image: url(sawiro/sawir1.jfif);
+
+}
+
+/* ------------add hover------------ */
+.card:hover{
+    transform: translateY(-10px)
+
+}
+h5{
+    color: blue;
+    padding-top: 20px;
+    font-size: 28px;
+    
+}
+.card p{
+    padding-top: 90px;
+    line-height: 22px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.card2 h5{
+    color: red;
+
+    
+}
+.card1 p{
+    color:white ;
+
+}
+.card3 p{
+    color:white ;
+
+}
+/* 
+-------------------------changed------------------------------- */
+
+.box{
+    width: 80%;
+    padding-top: 60px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 7%;
+}
+
+
+
+
+.midddle{
+   
+    display: flex;
+    align-items: center;
+}
+
+.sawir img{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 10px;
+    width: 270px;
+    height: 400px;
+}
+.sawir{
+    
+    flex-basis: 50%;
+}
+
+.sawir p{
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 1.4;
+}
+.sawir h1{
+    text-align: center;
+    line-height: 22px;
+    padding: 10px 0;
+}
+
+
+.btn{
+    width: 180px;
+    color: #fff;
+    font-size: 22px;
+    padding:12px 0;
+    background-color: #000;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #f55566;
+    transform: translateY(-10px);
+
+}
+#line{
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid #f55566;
+    border-width: 5px;
+
+}
+span{
+    color: #f55566;
+    border-bottom: 2px solid #000;
+}
+form{
+    margin-top: 30px;
+  
+   
+}
+
+form input{
+    margin: 15px;
+    display:block;
+    border-radius: 4px;
+    width: 80%;
+    padding: 15px;
+    outline: none;
+
+    
+}
+
+
+.footer{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-color: #f55566;
+    display: flex;
+    align-items: center;
+    
+}
+.top img{
+    width: 200px;
+    
+   
+}
+.top span{
+    color: rgb(0, 255, 17);
+  
+}
+.top h1{
+    
+  
+   
+    font-size: 50px;
+}
+.top{ 
+    text-align: center;
+    flex: 1;
+
+    
+}
+.last{
+    background-color: #1e1c1c;
+    padding: 10px 0;
+
+}
+.last h3{
+    color: #fff;
+    text-align: center;
+}
+
+.last-footer{
+    background-color: #ccc;
+    box-shadow: 0 0 30px rgba(0, 100, 90, 0.5);
+    padding: 30px;
+
+   
+}
+
+
+.footer-1  a{
+
+    text-decoration: none;
+   border: 2px solid #000;
+   padding: 10px 10px;
+   border-radius: 50%;
+   color: black;
+    font-size: 24px;
+    margin: 20px 20px;
+    transition: 0.5s;
+   
+    
+    
+}
+.footer-1 {
+    margin: 10px auto;
+    text-align: center;
+    
+    
+    
+  
+  
+}
+.footer-1 a:hover{
+    border: none;
+    
+    color: #fff;
+    background-color: red;
+    
+}
+
+.footer-1  hr{
+    background-color: blue;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    margin-top: 50px;
+    border: none;
+}
+
+.footer-1  p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+
+
+/* --------------------our  team---------------- */
+
+body{
+    background-color: #efefef;
+
+}
+.title-box{
+    text-align: center;
+    margin: 100px auto 50px;
+}
+
+.title-box p{
+    margin: 10px;
+    line-height: 24px;
+
+}
+.title-box h1{
+    color: #2196f3;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+/* ----------------profile-box------------------- */
+
+.profile-box {
+    width: 240px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 10px 10px rgba(115, g193, 255, 0.1);
+    padding: 20px;
+    position: relative;
+    transition: background 0.5s;
+}
+
+.profile-box img{
+    width: 100px;
+    
+   
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 4px;
+    transition: 0.5s;
+  
+    
+}
+.profile-box h4{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #2196f3;
+
+}
+.profile-box small{
+    color: red;
+}
+
+.socil-box{
+    background-color: #2196f3;
+    margin: 80px auto 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+.socil-box .fa{
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.profile-box p{
+    text-align: center;
+    line-height: 20px;
+    color: #555;
+}
+
+/* ------------team-row---------- */
+
+.team-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+
+}
+.profile-box img:hover{
+    width: 240px;
+}
+.profile-box:hover{
+    background-color: #2196f3;
+}
+.profile-box:hover h4{
+    color: #fff;
+}
+.profile-box:hover p{
+    color: #efefef;
+}
+.profile-box:hover small{
+    color: #efefef;
+}
+.profile-box:hover .socil-box{
+   background-color: #fff;
+
+}
+.profile-box:hover .socil-box .fa{
+   color: #2196f3;
+ 
+ }
+
+ .team-row1{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin:20px auto;
+    margin-bottom: 40px;
+
+   
+
+ }
+  .top.dhac-h1 h1{
+    text-align: center;
+    color: #2196f3;
+ }
+.footer-5{
+
+    background-color: #f55566;
+}
+
+
+.tems{
+    height: 100px;
+    background-color: rgb(16, 18, 16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    
+}
+.tems a{
+    font-size: 24px;
+}
+
+
+/* 
+
+---------------------------register-----hover--------------------------- */
+
+.register{
+    
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #011418;
+    font-weight: bold;
+    transition: 0.5s;
+ }
+ .register:hover{
+    color: #fff;
+    background-image: linear-gradient(to right,#09cbfc , #04cdf5);
+    transform: translateY(-10px);
+    border: none;
+ }
+
+
+
